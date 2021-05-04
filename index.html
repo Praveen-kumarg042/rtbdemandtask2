@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="ad.size" content="width=300,height=100" />
+        <title>Ad</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div
+            id="AdFloatRight"
+            style="
+                right: 3%;
+                background-color: lightgray;
+                position: fixed;
+                text-align: center;
+                top: 3%;
+                height: 100px;
+                width: 300px;
+            "
+        >
+            <div id="close">
+                <svg
+                    class="closesvg"
+                    style="transform: rotate(45deg)"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    fill="#000000"
+                >
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                </svg>
+            </div>
+
+            <img
+                src="http://www.garcard.com/images/garcard_symbol.png"
+                style="
+                    margin-top: 5%;
+                    margin-right: 5%;
+                    display: block;
+                    position: relative;
+                "
+                alt="Ad"
+            />
+        </div>
+
+        <div
+            class="label"
+            style="
+                border: 1px solid black;
+                min-width: 30vh;
+                boxshadow: 0 9px 38px rgba(0, 0, 0, 0.1),
+                    0 15px 12px rgba(0, 0, 0, 0.22);
+            "
+        >
+            <span class="labels">
+                <div>
+                    <div style="font-size: 1.5rem; float: left; color: #d14c4c">
+                        Movie&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div
+                        id="movie1"
+                        style="font-size: 1rem; float: right"
+                    ></div>
+                </div>
+                <div>
+                    <div style="font-size: 1.5rem; float: left; color: #d14c4c">
+                        Place
+                    </div>
+                    <div
+                        id="place1"
+                        style="font-size: 1rem; float: right"
+                    ></div>
+                </div>
+            </span>
+        </div>
+
+        <div class="carousel" id="carousel">
+            <figure>
+                <div
+                    class="block"
+                    id="block1"
+                    style="
+                        background-color: #87e487;
+                        text-align: center;
+                        font-size: 2rem;
+                    "
+                >
+                    <div style="font-size: 2rem">Movie</div>
+                    <div id="movie" style="font-size: 1rem"></div>
+                </div>
+                <div
+                    class="block"
+                    id="block2"
+                    style="background-color: #5957e4; text-align: center"
+                >
+                    <div style="font-size: 2rem">Place</div>
+                    <div id="place" style="font-size: 1rem"></div>
+                </div>
+                <div
+                    class="block"
+                    id="block3"
+                    style="background-color: #d14c4c"
+                >
+                    <img src="" alt="Ad" />
+                </div>
+            </figure>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
